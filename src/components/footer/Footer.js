@@ -1,70 +1,31 @@
-import React from 'react'
-import { SiDatabricks } from 'react-icons/si'
-import { BsFillArrowUpCircleFill } from 'react-icons/bs'
-import { FiMail, FiFacebook, FiGithub, FiInstagram, FiLinkedin, FiDribbble } from 'react-icons/fi'
-import './FooterStyles.css'
-
-import { Link } from 'react-scroll'
+import React from 'react';
+import { SiDatabricks } from 'react-icons/si';
+import { FiMail, FiPhone } from 'react-icons/fi';
+import './FooterStyles.css';
 
 const Footer = () => {
-    return (
-        <div className='footer'>
-            <div className="container">
-                <div className="top">
-                    <div className="logo-footer">
-                        <SiDatabricks className='icon' />
-                        <h2>Secured.</h2>
-                    </div>
-                    <Link activeClass="active" to="top" spy={true} smooth={true} duration={500} >
-                        <BsFillArrowUpCircleFill className='icon' />
-                    </Link>
-
-                </div>
-                <div className="col-container">
-                    <div className="col">
-                        <h3>Navigation</h3>
-                        <p>Home</p>
-                        <p>Data</p>
-                        <p>Cloud</p>
-                        <p>Contact</p>
-                    </div>
-                    <div className="col">
-                        <h3>My Account</h3>
-                        <p>Home</p>
-                        <p>Data</p>
-                        <p>Cloud</p>
-                        <p>Contact</p>
-                    </div>
-                    <div className="col">
-                        <h3>Information</h3>
-                        <p>Home</p>
-                        <p>Data</p>
-                        <p>Cloud</p>
-                        <p>Contact</p>
-                    </div>
-                    <div className="col">
-                        <h3>Legal</h3>
-                        <p>Home</p>
-                        <p>Data</p>
-                        <p>Cloud</p>
-                        <p>Contact</p>
-                    </div>
-                    <form>
-                        <h3>Join Our Team</h3>
-                        <input type="email" placeholder='Enter your email' />
-                        <FiMail className='mail-icon' />
-                        <div className="social-group">
-                            <FiInstagram className='social-icon' />
-                            <FiFacebook className='social-icon' />
-                            <FiLinkedin className='social-icon' />
-                            <FiDribbble className='social-icon' />
-                            <FiGithub className='social-icon' />
-                        </div>
-                    </form>
-                </div>
-            </div>
+  return (
+    <div className='footer'>
+      <div className="container">
+        <div className="info-columns">
+          <div className="column">
+            <h3>Argentina</h3>
+            <p>Maipú 311, Piso 16 · (C1006ACA), Buenos Aires</p>
+            <p><FiPhone /> +54 11 5368 8042</p>
+          </div>
+          <div className="column">
+            <h3>USA</h3>
+            <p>Suite 330 3401 SW 160TH Ave · Miramar, FL 33027</p>
+            <p><FiPhone /> +17864085611</p>
+          </div>
+          <div className="column">
+            <h3>Contact</h3>
+            <p><FiMail /> info@bdtglobal.com</p>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
