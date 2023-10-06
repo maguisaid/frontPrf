@@ -1,30 +1,131 @@
 .navbar {
-    width: 10%;
-    height: 10px; /* Cambia la altura a 60px o el valor deseado */
+    width: 100%;
+    height: 100px;
     position: absolute;
     z-index: 10;
-    background-color: #fff; /* Color de fondo lila */
 }
 
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 1rem;
+}
+
+.navbar .logo .icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+}
+
+.navbar .nav-menu {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
 .navbar li {
     padding: 1rem;
     font-weight: 600;
     color: #fff;
-    margin-right: 1rem;
-    display: inline-block; /* Cambia 'display' a 'inline-block' */
 }
 
 .navbar .icon {
     font-size: 1.4rem;
-    color: #d4ade5;
+    color: #fff;
 }
 
 @media screen and (max-width: 940px) {
-    /* ... Otros estilos ... */
+    .navbar .hamburger {
+        display: block;
+        z-index: 15;
+    }
+
+    .navbar .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left:-100%;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .8);
+        transition: 0.5s ease-in;
+    }
+
+    .navbar .active {
+        left: 0;
+    }
 
     .navbar li {
-        margin-right: 0;
+        margin-right: 1rem;
         font-size: 2rem;
     }
+
+    .navbar button {
+        font-size: 1.8rem;
+    }
+
+
 }
+.nav-menu {
+    display: flex; /* Para que los elementos se coloquen en línea */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+  }
+  
+  .nav-menu li {
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+  }
+  
+  .popup {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    color: black; /* Texto en color negro */
+    padding: 20px; /* Espaciado interior */
+    position: fixed; /* Cambiamos a posición fija para asegurarnos de que el cuadro se muestre completamente */
+    top: 50%; /* Colocamos el cuadro en el centro vertical de la pantalla */
+    left: 50%; /* Colocamos el cuadro en el centro horizontal de la pantalla */
+    transform: translate(-50%, -50%); /* Centra el cuadro en la pantalla */
+    max-width: 80%; /* Ancho máximo del cuadro */
+    max-height: 80%; /* Altura máxima del cuadro */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es demasiado largo */
+    z-index: 999; /* Aseguramos que el cuadro esté en la capa superior */
+  }
+  
+  .popup-content ul li::before {
+    content: "\2022"; /* Usamos un círculo como viñeta */
+    color: black; /* Cambiamos el color de la viñeta a negro */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; /* Alineamos la viñeta con el texto */
+    margin-right: 0.5em; /* Agregamos un espacio entre la viñeta y el texto */
+  }
+  .popup-content {
+    max-width: 100%;
+    color: black;
+    text-align: center;
+  }
+  
+  .popup-content ul li {
+    color: black; /* Cambiamos el color del texto de los elementos de lista a negro */
+  }
+  .popup p {
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+  .center-button {
+    display: block;
+    margin: 10px auto; /* Centra horizontalmente y agrega espacio alrededor */
+  }
