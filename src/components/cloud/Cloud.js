@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const Cloud = () => {
   return (
     <div className='cloud'>
-      <div className='container'>
         <div className='content'>
           <h2>Medí tu Huella de Carbono</h2>
           <p>
@@ -16,7 +15,6 @@ const Cloud = () => {
           <button><Link to='/formCreator'>COMENZAR</Link></button>
           </div>
         </div>
-      </div>
     </div>
   );
 };

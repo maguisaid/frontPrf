@@ -22,14 +22,15 @@ const Navbar = () => {
   };
 
   return (
-    <div data-name='top' className='navbar'>
-      <div className="container">
+     <div data-name='top' className='navbar'>
         <div className="logo">
-          <Link to='/home' className="logo">
+        <Link to='/home' className="logo" style={{ fontWeight: 'bold' }}>
             <img src={logo} alt="BDT GLOBAL Logo" className="logo-image" style={{ width: '180px', height: 'auto' }} />
           </Link>
         </div>
-        <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
+
+        
+         <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
           <li>
             <Link to='/'>Home</Link>
           </li>
@@ -68,12 +69,9 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
+
         </ul>
       </div>
-    </div>
   );
 };
 

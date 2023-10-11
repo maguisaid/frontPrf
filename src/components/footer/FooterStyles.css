@@ -4,11 +4,6 @@
     padding: 10px 0;
   }
   
-  .container {
-    max-width: 1200px; /* Establece un ancho máximo para el contenido del footer */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-  }
-  
   .logo-footer {
     display: flex;
     align-items: center;

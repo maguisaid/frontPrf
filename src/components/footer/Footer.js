@@ -6,7 +6,6 @@ import './FooterStyles.css';
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className="container">
         <div className="info-columns">
           <div className="column">
             <h3>Argentina</h3>
@@ -23,7 +22,6 @@ const Footer = () => {
             <p><FiMail /> info@bdtglobal.com</p>
           </div>
         </div>
-      </div>
     </div>
   );
 };
