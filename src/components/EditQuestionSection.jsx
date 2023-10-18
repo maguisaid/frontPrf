@@ -95,8 +95,13 @@ function EditQuestionSection(props) {
     props.onAddQuestion(props.id,newQuestion)
   }
 
-  function onChanged(event, propertyName) {
-    props.onQuestionSectionChange(props.id, { [propertyName]: event.target.value })
+  function onChanged(value, propertyName) {
+    props.onQuestionSectionChange(props.id, { [propertyName]: value })
+  }
+  function onLogicStatementInput(idSeccion,listaStatements){
+    console.log(idSeccion,"idSeccion")
+    console.log(listaStatements,"listaStatements")
+onChanged(listaStatements,"statements")
   }
 
   return (
@@ -104,7 +109,7 @@ function EditQuestionSection(props) {
       <div className='row'>
         <div className={(logicSettingsOpen?"col-5":"col-10")}>
           <h2>
-            <textarea rows={1} onInput={(event) => onChanged(event, "title")} className="transparent-input formQuestionSectionTitle" name="fname" placeholder='Question Title...'></textarea>
+            <textarea rows={1} onInput={(event) => onChanged(event.target.value, "title")} className="transparent-input formQuestionSectionTitle" name="fname" placeholder='Question Title...'></textarea>
           </h2>
           {questionTypeElementList}
         </div>
@@ -125,9 +130,10 @@ function EditQuestionSection(props) {
 
           </div>
 <div className={"row " + (logicSettingsOpen?"":"disapear")}>
-<EditNavegationLogic>
-
-</EditNavegationLogic>
+<EditNavegationLogic
+idSeccion={props.id}
+onLogicStatementInput={onLogicStatementInput}
+/>
 </div>
 
         </div>

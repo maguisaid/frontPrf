@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
-  --primary-color: #0fB8e0;
+  --primary-color-bright: #544eeb;
+  --primary-color-dull: #8c79db;
   --primary-dark: #0d2154;
+  --primary-light: #f8f8f8;
 }
+
 span {
-  color: var(--primary-color);
+  color: var(--primary-color-dull);
 }
 
 * {
@@ -61,8 +64,8 @@ button {
   font-family: 'Roboto', sans-serif;
   padding: .7rem 1.5rem;
   margin: 1rem 0;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color-dull);
+  border: 1px solid var(--primary-color-dull);
   color: #f8f8f8;
   font-size: 1rem;
   font-weight: 500;
@@ -83,8 +86,8 @@ button {
 }
 
 button:hover {
-  background-color: #47dcff;
-  border: 1px solid #47dcff;
+  background-color: --primary-color-bright;
+  border: 1px solid --primary-color-bright;
 }
 
 .grey{
@@ -100,14 +103,14 @@ button:hover {
 }
 
 .primary-btn{
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color-dull);
+  border: 1px solid var(--primary-color-dull);
 
 }
 
 .primary-btn:hover{
-  background-color: #47dcff;
-  border: 1px solid #47dcff;
+  background-color: --primary-color-bright;
+  border: 1px solid --primary-color-bright;
 }
 
 
@@ -168,13 +171,8 @@ visibility: visible;
 }
 
 .color-primary{
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-bright);
 }
-
-.color-primary{
-  background-color: var(--primary-color);
-}
-
 .just-center{
   justify-content: center;
 }
