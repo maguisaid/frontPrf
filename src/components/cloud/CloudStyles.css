@@ -28,16 +28,50 @@
   }
   
 
-.button {
-    background-color: #544eeb;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+ 
+.grey{
+  background-color: #e4e4e4;
+}
+
+.grey-btn{
+  background-color: #c8c8c8;
 }
 
 .popup button:hover {
-    background-color: #544eeb;
+  background-color: #544eeb;
 }
 
+button:hover {
+background-color: --primary-color-bright;
+border: 1px solid --primary-color-bright;
+}
+
+.grey-btn:hover{
+background-color: #999999;
+}
+
+.primary-btn{
+background-color: var(--primary-color-dull);
+border: 1px solid var(--primary-color-dull);
+
+}
+
+.primary-btn:hover{
+background-color: --primary-color-bright;
+border: 1px solid --primary-color-bright;
+}
+
+.button{
+  background-color: #544eeb;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color-dull);
+  border: 1px solid var(--primary-color-dull);
+  margin: 1rem 0;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  border-radius: 4px;
+}

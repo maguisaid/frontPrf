@@ -12,7 +12,7 @@ const Cloud = () => {
             sobre tus actividades, estilo de vida y uso de recursos.
           </p>
           <div>
-          <button><Link to='/formCreator'>COMENZAR</Link></button>
+          <button><Link to='/formCreator'>MEDÍ TU HELLA DE CARBONO</Link></button>
           </div>
         </div>
     </div>
