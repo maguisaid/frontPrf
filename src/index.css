@@ -186,25 +186,51 @@ textarea:focus, .transparent-input:focus{
 .invisible:hover{
   visibility: hidden;
 }
+
+
 .disapear{
   display: none !important;
 }
 .disapear:hover{
   display: none !important;
 }
-
+.dragabbleBox{
+  width: unset!important;
+  padding: 0px!important;
+  border: 0px;
+  background-color: rgb(0,0,0,0);
+}
 .chip{
   float: left;
   padding: .4rem;
   margin: .4rem;
   border-radius: .5rem;
+  color: #fff;
 }
-
+.clearDroppableChipBox{
+  background-color: rgb(0,0,0,0);
+  border: rgb(0,0,0,0);
+}
 .clickable:hover{
   cursor: pointer;
 
 }
-
+.clear{
+  color: rgb(0,0,0,0);
+  background-color: rgb(0,0,0,0);
+}
+.droppableChipBox{
+  background-color: #fff;
+  border: #e4e4e4 2px solid;
+  display: flex;
+  min-height: 30px;
+}
+.dropableSeparator{
+  background-color: Gainsboro;
+  width: 5px;
+  height: 30px;
+  margin: 5px;
+}
 .stack-small{
   border: var(--primary-color) 2px solid;
   margin: .5rem;

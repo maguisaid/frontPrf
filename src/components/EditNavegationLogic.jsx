@@ -20,18 +20,17 @@ export default function EditNavigationLogic(props) {
 </>
 );
 
-function onLogicStatementsChanged(id,value){
-  console.log("onLogicStatementsChanged")
-  
+function onLogicStatementsChanged(logicStatements){
+  console.log("logicStatements",logicStatements)
   // let foundElement = logicStatements.find(element=>element.id===id)
   // foundElement.value = value;
-  // setLogicStatements([...(logicStatements.filter(element=>element.id!==id)),foundElement])
-  // props.onLogicStatementInput(props.idSeccion,logicStatements)
+  setLogicStatements(logicStatements)
+  props.onLogicStatementInput(props.idSeccion,logicStatements)
 }
 
   return (<>
 
-<ChipListReorderable  onChange={(event)=>onLogicStatementsChanged(event.target.value)}/>
+<ChipListReorderable  onChange={(statements)=>onLogicStatementsChanged(statements)}/>
 
     </>
   );

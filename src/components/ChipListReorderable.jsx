@@ -11,7 +11,7 @@ export default function ChipListReorderable(props) {
     const draggableMarkup = (<>
         {droppables.filter(droppable => droppable.belongs === defaultChipBoxContainerId).map((id) => (
             <Draggable id={id.id} key={id.id}>
-                <Chip color={"red"} text={id.value} />
+                <Chip color={id.type==="question"?"DarkSlateBlue":"CornflowerBlue"} text={id.value} />
             </Draggable>
         ))}
     </>
@@ -30,7 +30,7 @@ export default function ChipListReorderable(props) {
         return droppables.map((element, index, array) =>
             <>
                 <Draggable id={element.id} key={element.id}>
-                    <Chip color={"red"} text={element.value} />
+                    <Chip color={element.type==="question"?"DarkSlateBlue":"CornflowerBlue"} text={element.value} />
                 </Draggable>
                 <Droppable2 key={("droppable-" + (index + 1))} id={("droppable-" + (index + 1))} className="dropableSeparator" />
             </>
@@ -41,7 +41,7 @@ export default function ChipListReorderable(props) {
             <DndContext onDragEnd={handleDragEnd}>
                 {draggableMarkup}
                 <div className='droppableChipBox'>
-                    <Droppable2 key={"droppable-0"} id={"droppable-0"} className="dropableSeparator" />
+                    <Droppable2 isFirst={true} onlyShowOnHover={true} key={"droppable-0"} id={"droppable-0"} className="dropableSeparator" />
                     {getDroppablesAndDraggables(droppables.filter(draggable => draggable.belongs !== defaultChipBoxContainerId))}
                     {/* {getDroppablesAndDraggables(droppables.filter(droppable => droppable.belongs === props.id))} */}
                 </div>
@@ -71,7 +71,8 @@ export default function ChipListReorderable(props) {
     }
 
     function handleDragEnd(event) {
-        props.onChange(event)
+        debugger;
+        
         const { over } = event;
         console.log(event)
         let newDroppable = null;
@@ -97,9 +98,10 @@ export default function ChipListReorderable(props) {
         });
         if (newDroppable !== null)
             newDroppablesList = insertDraggableAt(newDroppablesList, newDroppable, insertIndex)
-
+        debugger;
+        props.onChange(newDroppablesList.filter(draggable=>draggable.belongs !== defaultChipBoxContainerId))
         setDroppables(newDroppablesList)
 
-        console.log("droppables", droppables)
+        console.log("droppables", newDroppablesList)
     }
 }
