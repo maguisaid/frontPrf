@@ -19,7 +19,7 @@ const Cloud = () => {
           </div>
           <div>
           <button>
-                <Link to="/Informacion">INDIVIDUO</Link>
+                <Link to="/informacion">INDIVIDUO</Link>
           </button>
           <button><Link to= ''>EMPRESA</Link></button>
           </div>
