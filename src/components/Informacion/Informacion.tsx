@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Informacion.css';
+import imagenEjemplo from './ruta-de-tu-imagen.jpg'; // Ajusta la ruta y el nombre de tu imagen
 
 const Informacion = () => {
   return (
@@ -19,6 +20,9 @@ const Informacion = () => {
           <p>Tené en cuenta que estás midiendo/compensando tu huella del último año, "es decir los últimos 12 meses. Ejemplo: Si estás midiendo tu huella en febrero de 2023, calcula los últimos 12 meses desde febrero de 2022.</p>
         </div>
         <div className="btn-MideTuHuella">Medí tu Huella</div>
+        <div className="image-container">
+          <img src= "picture.png" alt="Descripción de la imagen" />
+        </div>
       </div>
     </div>
   );

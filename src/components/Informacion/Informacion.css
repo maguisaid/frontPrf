@@ -21,7 +21,8 @@
     width: 100%;
     max-width: 600px;
     margin: 10px;
-    max-height: 600px; /* Ajusta la altura máxima deseada */
+    max-height: 600px;
+    align-self: flex-start;
   }
   
   .Informacion .additional-info {
@@ -35,19 +36,19 @@
     width: 100%;
     max-width: 600px;
     margin: 10px;
-    max-height: 600px; /* Aumenta la altura máxima para mostrar más contenido */
-  }
-  
-
-  
-  .Informacion .content {
-    align-self: flex-start;
-  }
-  
-  .Informacion .additional-info {
+    max-height: 600px;
     align-self: flex-end;
-    margin-top: -435px; /* Aumenta este valor para moverlo aún más arriba */
+    margin-top: -435px;
   }
+  
+  .Informacion img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: 250px; /* Ajusta la altura de la imagen */
+    align-self: flex-start; /* Mueve la imagen hacia la izquierda */
+    margin-right: 700px; /* Agrega un margen derecho para separar la imagen del cuadro blanco izquierdo */
+    margin-top: -650px; /* Ajusta el margen superior para mover la imagen más arriba */
+  }
+  
   
   .Informacion h2 {
     font-family: 'Montserrat', sans-serif;

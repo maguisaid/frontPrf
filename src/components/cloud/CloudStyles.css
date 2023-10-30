@@ -33,66 +33,20 @@
     font-weight: 400;
     margin-bottom: 1.5rem!important;
   }
+
+
+  .cloud .primary-btn {
+    font-size: 18px;
+    background-color: #5046DF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none; /* Evita que el botón se comporte como un enlace */
+    cursor: pointer;
+    border: none; /* Elimina el borde del botón */
+  }
   
 
- 
-.grey{
-  background-color: #e4e4e4;
-}
-
-
-/* Estilos para los botones */
-.button {
-  background-color: #f0f0f0; /* Color de fondo más claro */
-  color: #333; /* Color de texto */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  font-weight: 500; /* Puedes ajustar el peso de la fuente según tu preferencia */
-  padding: 8px 16px; /* Relleno más pequeño */
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.button:hover {
-  background-color: #ddd; /* Cambia el color de fondo al pasar el cursor a un tono más claro */
-  transform: scale(0.95); /* Reducción ligeramente el tamaño al pasar el cursor */
-}
-
-.primary-btn {
-  background-color: #a0a0ff; /* Color de fondo más claro y suave */
-  color: #333; /* Color de texto */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  font-weight: 500; /* Puedes ajustar el peso de la fuente según tu preferencia */
-  padding: 8px 16px; /* Relleno más pequeño */
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.primary-btn:hover {
-  background-color: #8080ff; /* Cambia el color de fondo al pasar el cursor a un tono más claro */
-  transform: scale(0.95); /* Reducción ligeramente el tamaño al pasar el cursor */
-}
-
-/* Estilos para el botón de clase 'popup' */
-.popup button {
-  background-color: #f0f0f0; /* Color de fondo más claro */
-  color: #333; /* Color de texto */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  font-weight: 500; /* Puedes ajustar el peso de la fuente según tu preferencia */
-  padding: 8px 16px; /* Relleno más pequeño */
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.popup button:hover {
-  background-color: #ddd; /* Cambia el color de fondo al pasar el cursor a un tono más claro */
-  transform: scale(0.95); /* Reducción ligeramente el tamaño al pasar el cursor */
-}
