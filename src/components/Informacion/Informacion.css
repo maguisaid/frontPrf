@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 600px;
     margin: 10px;
-    max-height: 200px; /* Ajusta la altura máxima deseada */
+    max-height: 600px; /* Ajusta la altura máxima deseada */
   }
   
   .Informacion .additional-info {
@@ -67,7 +67,7 @@
   .Informacion .btn-MideTuHuella {
     font-size: 18px;
     background-color: #5046DF;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     text-align: center;
     color: #FFFFFF;
