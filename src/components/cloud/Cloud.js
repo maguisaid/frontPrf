@@ -15,13 +15,17 @@ const Cloud = () => {
           <h6>EMPEZÁ AHORA</h6>
           </div>
           <div>
-          <button><Link to='/formCreator'>IR AL BACKOFFICE</Link></button>
+            <button className="primary-btn">
+              <Link to='/formCreator'>IR AL BACKOFFICE</Link>
+            </button>
           </div>
           <div>
-          <button>
-                <Link to="/informacion">INDIVIDUO</Link>
-          </button>
-          <button><Link to= ''>EMPRESA</Link></button>
+            <button className="primary-btn">
+              <Link to="/informacion">INDIVIDUO</Link>
+            </button>
+            <button className="primary-btn">
+              <Link to="/informacion">EMPRESA</Link>
+            </button>
           </div>
         </div>
     </div>

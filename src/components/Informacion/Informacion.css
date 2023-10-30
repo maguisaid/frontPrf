@@ -1,0 +1,76 @@
+.Informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .Informacion .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    max-height: 200px; /* Ajusta la altura máxima deseada */
+  }
+  
+  .Informacion .additional-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    max-height: 600px; /* Aumenta la altura máxima para mostrar más contenido */
+  }
+  
+
+  
+  .Informacion .content {
+    align-self: flex-start;
+  }
+  
+  .Informacion .additional-info {
+    align-self: flex-end;
+    margin-top: -435px; /* Aumenta este valor para moverlo aún más arriba */
+  }
+  
+  .Informacion h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  .Informacion p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .Informacion .btn-MideTuHuella {
+    font-size: 18px;
+    background-color: #5046DF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  
