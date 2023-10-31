@@ -1,0 +1,60 @@
+.Informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .Informacion .content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 45%; /* Ajusta el ancho del cuadro izquierdo */
+    max-height: 600px;
+    font-family: 'Montserrat', sans-serif; /* Agrega el estilo de fuente */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Informacion .additional-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 45%; /* Ajusta el ancho del cuadro derecho */
+    max-height: 600px;
+    font-family: 'Montserrat', sans-serif; /* Agrega el estilo de fuente */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Mueve el cuadro derecho al lado derecho */
+  }
+  
+  .Informacion .image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Ajusta el margen superior para separar la imagen del cuadro izquierdo */
+  }
+  
+  .Informacion .btn-MideTuHuella {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #5046DF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  
