@@ -5,7 +5,7 @@
     background-color: #f0f0f0;
     padding: 10px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 115vh;
     box-sizing: border-box;
     text-align: center;
   }
@@ -23,6 +23,8 @@
     margin: 10px;
     max-height: 600px;
     align-self: flex-start;
+    border-radius: 10px; /* Agrega un borde redondeado de 10px */
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
   }
   
   .Informacion .additional-info {
@@ -38,15 +40,19 @@
     margin: 10px;
     max-height: 600px;
     align-self: flex-end;
-    margin-top: -435px;
+    margin-top: -610px;
+    border-radius: 10px; /* Agrega un borde redondeado de 10px */
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
   }
   
-  .Informacion img {
+  .Informacion .image {
     max-width: 100%; /* Ajusta el ancho máximo de la imagen */
     height: 250px; /* Ajusta la altura de la imagen */
-    align-self: flex-start; /* Mueve la imagen hacia la izquierda */
-    margin-right: 700px; /* Agrega un margen derecho para separar la imagen del cuadro blanco izquierdo */
-    margin-top: -650px; /* Ajusta el margen superior para mover la imagen más arriba */
+     /* Mueve la imagen hacia la izquierda */
+    margin-top: -500px;
+    margin-left: -700px;
+    border-radius: 10px; /* Agrega un borde redondeado de 10px */
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
   }
   
   

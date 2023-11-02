@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './InformacionEmpresa.css';
 import imagenEjemplo from './picture.png';
 
-const Informacion = () => {
+const InformacionEmpresa = () => {
   return (
-    <div>
-      <div className="Informacion">
+    <div className="InformacionEmpresa">
+
         <div className="content">
           <h2>¿Qué información necesitas tener antes de medir la huella de tu empresa?</h2>
           <p>
@@ -29,7 +29,8 @@ const Informacion = () => {
               </ul>
             </li>
           </ul>
-        
+        </div>
+
         <div className="additional-info">
           <h2>¿Cuánto tiempo necesita para calcular su huella?</h2>
           <p>Una vez recopilada la información necesaria, va a necesitar entre 15 y 20 minutos para cargarla en la calculadora.</p>
@@ -39,14 +40,15 @@ const Informacion = () => {
           <p>Ejemplo: Si está midiendo/compensando la huella de su empresa en 2023 deberá
           considerar el cálculo de 2022</p>
         </div>
+
         <div className="image-container">
           <img src="picture.png" alt="Descripción de la imagen" />
         </div>
+
         <div className="btn-MideTuHuella">Medí tu Huella</div>
-      </div>
-      </div>
+
     </div>
   );
 }
 
-export default Informacion;
+export default InformacionEmpresa;
