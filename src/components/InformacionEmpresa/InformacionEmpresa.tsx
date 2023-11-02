@@ -45,8 +45,9 @@ const InformacionEmpresa = () => {
           <img src="picture.png" alt="Descripción de la imagen" />
         </div>
 
-        <div className="btn-MideTuHuella">Medí tu Huella</div>
-
+        <button className="btn-MideTuHuella">
+              <Link to="/">Medí tu Huella</Link>
+        </button>
     </div>
   );
 }

@@ -5,13 +5,13 @@ import './NavbarStyles.css';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [showPopup1, setShowPopup1] = useState(false); // Variable de estado para la primera pregunta
-  const [showPopup2, setShowPopup2] = useState(false); // Variable de estado para la segunda pregunta
+  const [showPopup1, setShowPopup1] = useState(false); 
+  const [showPopup2, setShowPopup2] = useState(false); 
   const [popupContent, setPopupContent] = useState("");
 
   const handleNav = () => setNav(!nav);
 
-  const togglePopup1 = (content: string) => { // Especificamos el tipo de 'content' como string
+  const togglePopup1 = (content: string) => { 
     setShowPopup1(!showPopup1);
     setPopupContent(content);
   };
@@ -23,6 +23,7 @@ const Navbar = () => {
 
   return (
      <div data-name='top' className='navbar'>
+
         <div className="logo">
            <Link to='/'>
                <img src={logo} alt="BDT GLOBAL Logo" className="logo-image" style={{ width: '180px', height: 'auto' }} />
@@ -45,11 +46,12 @@ const Navbar = () => {
       <div className="popup-content">
         <p className="popup-text">{popupContent}</p>
       </div>
-      <button onClick={() => togglePopup1(popupContent)}>Cerrar</button>
+      <button className="btn-MideTuHuella" onClick={() => togglePopup1(popupContent)}>Cerrar</button>
     </div>
   )}
-</li>
-<li>
+        </li>
+        
+        <li>
   <span className="question" onClick={() => togglePopup2("Para evitar la huella de carbono, podemos tomar varias medidas, incluyendo:\n\n1. Reducir el consumo de energía: Utilizar fuentes de energía renovable y reducir el consumo de energía en el hogar y en la empresa.\n2. Fomentar el transporte sostenible: Usar medios de transporte más eficientes y compartir viajes.\n3. Reducir el desperdicio de alimentos: Comprar y consumir alimentos de manera más consciente y reducir el desperdicio de alimentos.\n4. Promover la reforestación: Plantar árboles y cuidar de los bosques para capturar el carbono.\n5. Apoyar la energía limpia: Invertir en energías renovables y apoyar la transición a una economía baja en carbono.")}>
     ¿Qué podemos hacer para evitarla?
   </span>
@@ -58,13 +60,14 @@ const Navbar = () => {
       <div className="popup-content">
         <p className="popup-text">{popupContent}</p>
       </div>
-      <button onClick={() => togglePopup2(popupContent)}>Cerrar</button>
+      <button className="btn-MideTuHuella" onClick={() => togglePopup2(popupContent)}>Cerrar</button>
     </div>
   )}
-</li>
+      </li>
 
-        </ul>
-      </div>
+      </ul>
+
+   </div>
   );
 };
 

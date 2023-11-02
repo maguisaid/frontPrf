@@ -24,8 +24,9 @@
     margin: 10px;
     max-height: 600px;
     align-self: flex-start;
-    border-radius: 10px; /* Agrega un borde redondeado de 10px */
+    border-radius: 10px; 
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
   }
 
   .InformacionEmpresa .additional-info {
@@ -38,23 +39,21 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 600px;
-    margin: 10px;
     max-height: 600px;
+    margin: 10px;
     align-self: flex-end;
-    margin-top: -610px;
-    border-radius: 10px; /* Agrega un borde redondeado de 10px */
+    margin-top: -656px;
+    border-radius: 10px; 
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
     min-height: 100vh;
   }
 
   .InformacionEmpresa .image-container{
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-    height: 250px; /* Ajusta la altura de la imagen */
-     /* Mueve la imagen hacia la izquierda */
+    max-width: -10%; 
+    height: 250px; 
     margin-top: -260px;
     margin-left: 700px;
-    
-    border-radius: 10px; /* Agrega un borde redondeado de 10px */
+    border-radius: 10px; 
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
   }
 
@@ -66,6 +65,10 @@
     text-align: center;
     color: #FFFFFF;
     margin-top: 20px;
+    display: inline-block;
+    text-decoration: none; 
+    cursor: pointer;
+    border: none;
   }
 
   .InformacionEmpresa p{

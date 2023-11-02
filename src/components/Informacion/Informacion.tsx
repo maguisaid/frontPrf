@@ -21,7 +21,9 @@ const Informacion = () => {
           <p>Tené en cuenta que estás midiendo/compensando tu huella del último año, "es decir los últimos 12 meses. Ejemplo: Si estás midiendo tu huella en febrero de 2023, calcula los últimos 12 meses desde febrero de 2022.</p>
         </div>
 
-        <div className="btn-MideTuHuella">Medí tu Huella</div>
+        <button className="btn-MideTuHuella">
+              <Link to="/">Medí tu Huella</Link>
+        </button>
         
         <div className="image">
           <img src= "picture.png" alt="imagen" />

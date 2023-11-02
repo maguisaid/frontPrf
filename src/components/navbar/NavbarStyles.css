@@ -82,13 +82,7 @@
     text-align: justify;
 }
 
-.center-button {
-    display: flex;
-    justify-content: center; /* Centro el botón horizontalmente */
-    margin: 10px auto;
-}
-
-.popup button {
+.popup .btn-MideTuHuella{
     background-color: #544eeb;
     color: white;
     padding: 10px 20px;
@@ -97,6 +91,3 @@
     font-size: 18px;
 }
 
-.popup button:hover {
-    background-color: #544eeb;
-}

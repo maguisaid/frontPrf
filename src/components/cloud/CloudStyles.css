@@ -47,9 +47,9 @@
     color: #FFFFFF;
     margin-top: 20px;
     display: inline-block;
-    text-decoration: none; /* Evita que el botón se comporte como un enlace */
+    text-decoration: none; 
     cursor: pointer;
-    border: none; /* Elimina el borde del botón */
+    border: none;
   }
   
 
