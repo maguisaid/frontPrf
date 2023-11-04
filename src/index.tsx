@@ -13,6 +13,7 @@ import InformacionPage from './routes/InformacionPage'
 import InformacionEmpresaPage from './routes/InformacionEmpresaPage'
 import FormCreatorPage from './routes/FormCreatorPage';
 import NewFormPage from './routes/NewFormPage';
+import FormPage from './routes/FormPage';
 
 
 
@@ -27,6 +28,8 @@ ReactDOM.render(
       <Route path='/informacionEmpresa' element={<InformacionEmpresaPage />} />
       <Route path='/formCreator' element={<FormCreatorPage />} />
       <Route path='/newForm' element={<NewFormPage />} />
+      <Route path='/form/:id' element={<FormPage />} />
+
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

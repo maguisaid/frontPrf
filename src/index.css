@@ -158,13 +158,18 @@ visibility: visible;
 
 .innerFormContainer{
   display: block;
+  min-height: 500px;
 }
-
+.radiobtn-label{
+  font-size: 1.5rem;;
+}
 .borderless, .borderless:focus-visible,.borderless:focus{
   border: 0px;
   outline: none;
 }
-
+input[type='radio'] { 
+  transform: scale(2); 
+}
 .transparent-input{
   border: 0px;
   background-color: rgb(0,0,0,0);

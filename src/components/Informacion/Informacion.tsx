@@ -22,7 +22,7 @@ const Informacion = () => {
         </div>
 
         <button className="btn-MideTuHuella">
-              <Link to="/">Medí tu Huella</Link>
+              <Link to="/form/695f26711c664498a492b1dfc6813231">Medí tu Huella</Link>
         </button>
         
         <div className="image">
